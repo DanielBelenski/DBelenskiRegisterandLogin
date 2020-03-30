@@ -10,6 +10,7 @@ import android.widget.Button;
 public class RegisterActivity extends AppCompatActivity {
 
     Button register;
+    Validator validator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

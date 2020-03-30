@@ -12,6 +12,7 @@ public class LoginActivity extends AppCompatActivity {
 
     TextView registerTextView;
     Button loginButton;
+    Validator validator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
