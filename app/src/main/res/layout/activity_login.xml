@@ -27,11 +27,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:gravity="center"
         android:ems="10"
-        android:hint="@string/username"
-        android:inputType="textPersonName"
-        android:importantForAutofill="no" />
+        android:gravity="center"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/passEditText"
