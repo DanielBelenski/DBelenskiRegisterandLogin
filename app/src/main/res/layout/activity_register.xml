@@ -58,12 +58,13 @@
         android:importantForAutofill="no" />
 
     <TextView
+        android:id="@+id/dateFormatTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/mm_dd_yyyy"
-        android:textStyle="italic"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/regPassEditText"
