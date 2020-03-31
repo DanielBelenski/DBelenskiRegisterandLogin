@@ -18,6 +18,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         register = (Button) findViewById(R.id.registerButton);
+        validator = new Validator();
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
