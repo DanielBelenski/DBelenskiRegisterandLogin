@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- using linear layout to simplify activity -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,64 +9,135 @@
     android:orientation="vertical"
     tools:context=".RegisterActivity">
 
+    <!-- Registration textview at top of the app
+     set id
+     set content dimensions
+     set layout positioning
+     customise text-->
     <TextView
         android:id="@+id/textView"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
+
         android:text="@string/registration"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
+    <!-- email edit text
+     set id
+     set content dimensions
+     set layout positioning
+     set hint
+     set input type
+     no autofill-->
     <EditText
         android:id="@+id/emailEditText"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="30dp"
         android:gravity="center"
+
         android:hint="@string/email"
+
         android:inputType="textEmailAddress"
+
         android:importantForAutofill="no" />
 
+    <!-- edit text for user first name
+     set id
+     set content dimensions
+     set layout placement
+     set hint
+     set input type
+     no autofill-->
     <EditText
         android:id="@+id/fnameEditText"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="30dp"
         android:gravity="center"
+
         android:hint="@string/first_name"
+
         android:inputType="textPersonName"
+
         android:importantForAutofill="no" />
 
+    <!-- edit text for user last name
+     set id
+     set content dimensions
+     set layout placement
+     set hint
+     set input type
+     no autofill-->
     <EditText
         android:id="@+id/lnameEditText"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="30dp"
         android:gravity="center"
+
         android:hint="@string/last_name"
+
         android:inputType="textPersonName"
+
         android:importantForAutofill="no" />
 
+    <!-- edit text for user date of birth
+     set id
+     set content dimensions
+     set layout positioning
+     set hint
+     set input type
+     no autofill-->
     <EditText
         android:id="@+id/dobEditText"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="30dp"
         android:gravity="center"
+
         android:hint="@string/date_of_birth"
+
         android:inputType="date"
+
         android:importantForAutofill="no" />
 
+    <!-- date format text view to inform the user how to input their birth date
+     set id
+     set content dimensions
+     set layout positioning
+     set and customise text-->
     <TextView
         android:id="@+id/dateFormatTextView"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="center"
+
         android:text="@string/mm_dd_yyyy"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textStyle="italic" />
 
+    <!-- edit text for password
+     set id
+     set content dimensions
+     set layout placement
+     set hint
+     set input type
+     no autofill-->
     <EditText
         android:id="@+id/regPassEditText"
         android:layout_width="match_parent"
@@ -76,28 +148,54 @@
         android:inputType="textPassword"
         android:importantForAutofill="no" />
 
+    <!-- edit text for confirmation password
+     set id
+     set content dimensions
+     set layout placement
+     set hint
+     set input type
+     no autofill-->
     <EditText
         android:id="@+id/confPassEditText"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="30dp"
         android:gravity="center"
+
         android:hint="@string/confirm_password"
+
         android:inputType="textPassword"
+
         android:importantForAutofill="no" />
 
+    <!-- button to check if info is valid and add user to database
+     set id
+     set content dimensions
+     set layout placement
+     set text-->
     <Button
         android:id="@+id/registerButton"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+
         android:text="@string/register" />
 
+    <!-- added an image to make the app look nicer
+     set id
+     set content dimensions
+     set content description and source-->
     <ImageView
         android:id="@+id/coolMageImageView"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:contentDescription="@string/cool_mage_pointing_to_the_register_button"
         app:srcCompat="@drawable/coolmage" />
 

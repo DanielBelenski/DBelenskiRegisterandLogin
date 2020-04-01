@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- utilizing linear layout due to screen simplicity -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,64 +9,115 @@
     android:orientation="vertical"
     tools:context=".LoginActivity" >
 
+    <!-- Login textview at top of app
+    set id
+    set content dimensions
+    set layout properties
+    customise text-->
     <TextView
         android:id="@+id/loginTextView"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="@string/login"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+        android:text="@string/login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"/>
+
+    <!-- EditText for email
+     set id
+     set content parameters
+     set layout parameters
+     customise text
+     turn off autofill
+     set input type-->
     <EditText
         android:id="@+id/loginEmailEditText"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:gravity="center"
+
         android:ems="10"
         android:hint="@string/email"
+
         android:inputType="textEmailAddress"
+
         android:importantForAutofill="no" />
 
+    <!-- EditText for password
+     set id
+     set content parameters
+     set layout parameters
+     customise text
+     turn off autofill
+     set input type-->
     <EditText
         android:id="@+id/passEditText"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="center"
+
         android:hint="@string/password"
+
         android:importantForAutofill="no"
+
         android:inputType="textPassword" />
 
+    <!-- button to activate validation of inputted information and transition to home activity
+     set id
+     set content dimensions
+     set text-->
     <Button
         android:id="@+id/loginButton"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+
         android:text="@string/login" />
 
+    <!-- plain textview
+     set id
+     set content dimensions
+     set layout positioning
+     set text-->
     <TextView
         android:id="@+id/miscTextView2"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
+
         android:text="@string/not_yet_a_member" />
 
+    <!-- text view to take user to registration
+     set id
+     set content dimensions
+     set layout positioning
+     customise and highlight text-->
     <TextView
         android:id="@+id/registerTextView"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="center"
+
         android:text="@string/register"
         android:textColor="@color/purple"/>
 </LinearLayout>

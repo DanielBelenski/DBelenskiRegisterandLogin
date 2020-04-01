@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Linear layout to make design easier since there are so few elements -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +9,11 @@
     android:orientation="horizontal"
     tools:context=".HomeActivity">
 
+    <!-- Welcome textview at left of app
+    set id
+    set content dimensions
+    set layout properties
+    customise text-->
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
@@ -21,6 +27,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- image in the middle of the app
+     set content dimensions
+     set content description
+     set asset-->
     <ImageView
         android:id="@+id/magicImageView"
         android:layout_width="396dp"
@@ -28,6 +38,11 @@
         android:contentDescription="@string/home_screen_background"
         app:srcCompat="@drawable/magic" />
 
+    <!-- logout button to transition back to login screen
+     set id
+     set content dimensions
+     set layout config
+     set text-->
     <Button
         android:id="@+id/logoutButton"
         android:layout_width="wrap_content"
