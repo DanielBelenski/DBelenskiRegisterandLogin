@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/unameEditText"
+        android:id="@+id/loginEmailEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -30,7 +30,7 @@
         android:gravity="center"
         android:ems="10"
         android:hint="@string/email"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:importantForAutofill="no" />
 
     <EditText
@@ -67,5 +67,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/register"
-        android:textColor="#B42FED"/>
+        android:textColor="@color/purple"/>
 </LinearLayout>
